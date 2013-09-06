@@ -2,6 +2,7 @@ package test;
 
 import static org.junit.Assert.*;
 
+import java.awt.List;
 import java.util.Arrays;
 
 import org.junit.Test;
@@ -20,9 +21,11 @@ public class FizzbuzzImplTest {
 		int[] buzz = { 5, 10, 20, 25, 35, 40, 50, 55, 65, 70, 80, 85, 95, 100};
 		int[] fizzBuzz = { 15, 30, 45, 60, 75, 90 };
 		
+		List liste = fb.fizzOrBuzz();
+		
 		for(int i = 1; i <= 100; i++){
 			
-			String verif = fb.fizzOrBuzz(i);
+			String verif = liste.getItem(i-1);
 			String iString = Integer.toString(i);
 			
 			if(Arrays.asList(fizz).contains(iString)) {

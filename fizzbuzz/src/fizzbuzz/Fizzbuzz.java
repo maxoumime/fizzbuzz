@@ -1,6 +1,8 @@
 package fizzbuzz;
 
+import java.awt.List;
+
 public interface Fizzbuzz {
 	
-	String fizzOrBuzz(int i);
+	List fizzOrBuzz();
 }

@@ -1,20 +1,28 @@
 package fizzbuzz;
 
+import java.awt.List;
+
 public class FizzbuzzImpl implements Fizzbuzz{
 
 	@Override
-	public String fizzOrBuzz(int i) {
+	public List fizzOrBuzz() {
 
-		String retour = "";
+		List retour = new List();
 		
-		if( (i % 3) == 0)
-			retour.concat("Fizz");
-		
-		if( (i % 5) == 0)
-			retour.concat("Buzz");
-		
-		if(retour.isEmpty())
-			retour = Integer.toString(i);
+		for(int i = 1; i <= 100; i++) {
+			String valeur = "";
+			
+			if( (i % 3) == 0)
+				valeur.concat("Fizz");
+			
+			if( (i % 5) == 0)
+				valeur.concat("Buzz");
+			
+			if(valeur.isEmpty())
+				valeur = Integer.toString(i);
+			
+			retour.add(valeur);
+		}
 		
 		return retour;
 	}
