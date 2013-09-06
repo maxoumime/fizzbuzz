@@ -1,8 +1,10 @@
 package fizzbuzz;
 
-import java.awt.List;
+import java.util.ArrayList;
 
 public interface Fizzbuzz {
 	
-	List fizzOrBuzz();
+	ArrayList<String> fizzOrBuzz();
+	
+	ArrayList<String> fizzOrBuzz2();
 }
